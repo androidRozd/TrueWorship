@@ -30,7 +30,7 @@ public class MainAdpter extends ArrayAdapter <Song> {
         Song song = mSongs.get (position);
         Log.e("name", song.getName());
 
-        TextView nameView = (TextView) convertView.findViewById(R.id.textView1);
+        TextView nameView = (TextView) convertView.findViewById(R.id.song_name);
 
         nameView.setText(song.getName());
 

@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 public class LyricsActivity extends AppCompatActivity {
 
+    private TextView mName;
     private TextView mLyrics;
 
     @Override
@@ -17,8 +18,10 @@ public class LyricsActivity extends AppCompatActivity {
 
         String name = intent.getStringExtra("name");
         String lyrics = intent.getStringExtra("lyrics");
+        mName = (TextView) findViewById(R.id.name);
         mLyrics = (TextView) findViewById(R.id.lyrics);
         mLyrics.setText(lyrics);
         setTitle(name);
     }
+
 }

@@ -1,7 +1,8 @@
 package com.example.user.trueworship;
 
+import com.parse.ParseClassName;
 import com.parse.ParseObject;
-
+@ParseClassName("Song")
 public class Song extends ParseObject {
     public Song() {
     }
